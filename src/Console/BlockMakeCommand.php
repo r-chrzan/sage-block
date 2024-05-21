@@ -11,7 +11,7 @@ class BlockMakeCommand extends MakeCommand
      *
      * @var string
      */
-    protected $signature = 'blade-block {name* : The name of the block}
+    protected $signature = 'sage-block {name* : The name of the block}
                             {--force : Overwrite any existing files}';
 
     /**
@@ -19,7 +19,7 @@ class BlockMakeCommand extends MakeCommand
      *
      * @var string
      */
-    protected $description = 'Create a new Blade block renderer.';
+    protected $description = 'Create a new Sage block renderer.';
 
     /**
      * The type of class being generated.
