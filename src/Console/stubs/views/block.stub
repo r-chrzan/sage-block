@@ -1,0 +1,11 @@
+<div class="{{ $block->classes }}">
+  @if ($data)
+    <p>{!! $data !!}
+  @else
+    <p>No data found!</p>
+  @endif
+
+  @if ($content)
+    {!! $content !!}
+  @endif
+</div>

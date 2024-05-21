@@ -1,0 +1,36 @@
+{
+  "name": "insidecode/sage-block",
+  "type": "package",
+  "description": "Create Blade partials to render native Gutenberg blocks using Sage 10.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rafał Chrzan",
+      "email": "r.chrzan@insidecode.pl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SageBlock\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "roots/acorn": "^3.0 || ^4.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7.2"
+  },
+  "extra": {
+    "acorn": {
+      "providers": [
+        "SageBlock\\Providers\\SageBlockServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "lint": [
+      "phpcs --ignore=vendor --extensions=php --standard=PSR12 ."
+    ]
+  }
+}

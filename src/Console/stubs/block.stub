@@ -1,0 +1,28 @@
+<?php
+
+namespace DummyNamespace;
+
+use SageBlock\SageBlock;
+
+class DummyClass extends SageBlock
+{
+    /**
+     * The block slug. Should match the slug given to your registered block.
+     *
+     * @var string
+     */
+    public $slug = 'DummySlug';
+
+    /**
+     * Data to be passed to the block before rendering.
+     *
+     * @param SageBlock $block
+     * @return array
+     */
+    public function with($block)
+    {
+        return [
+            'data' => 'dummy data',
+        ];
+    }
+}
